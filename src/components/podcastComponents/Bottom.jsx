@@ -3,9 +3,13 @@ import React from 'react'
 function Bottom() {
   return (
     <div className='bottom'>
-      {/* <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div> */}
+      <div className="timeline">
+        <svg width="309" height="17" viewBox="0 0 309 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.5" y1="8.5" x2="153.5" y2="8.50001" stroke="#3369FF" stroke-width="3" stroke-linecap="round" />
+          <line x1="156.5" y1="8.5" x2="307.5" y2="8.49999" stroke="white" stroke-width="3" stroke-linecap="round" />
+          <circle cx="154.5" cy="8.5" r="6.5" fill="white" stroke="#3369FF" stroke-width="4" />
+        </svg>
+      </div>
       <div className="info">
         <div className="like">
           <div className="like_icon">
