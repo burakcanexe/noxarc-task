@@ -1,0 +1,172 @@
+body{
+    background: #08131C;
+}
+
+.browse{
+    height: 100vh;
+    color: white;
+    padding-top: 56px;
+    padding-left: 37px;
+}
+
+.browse .logo svg{
+    width: 50px;
+    height: 50px;
+}
+
+.browse .logo .logo_text{
+    font-size: 1.3rem;
+    margin-left: 15px;
+}
+
+.browse .title{
+    margin-top: 48px;
+    font-weight: 700;
+}
+
+.browse .search_form{
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.browse .search_form .form_group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #010304;
+    opacity: 0.5;
+    border-radius: 16px;
+    width: 100%;
+    padding: 11px 16px 13px 16px;
+}
+
+.browse .search_form input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 14px;
+}
+.browse .search_form input:focus{
+    outline: 0;
+}
+
+.browse .search_form button{
+    background: transparent;
+    color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.browse .owl-theme{
+    margin: 32px 0 51px 0;
+}
+
+.browse .list_item{
+    text-align: center;
+    transition: 300ms all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse .list_item:hover .list_icon{
+    background-color: #3a526f;
+}
+
+.browse .list_item .list_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    background-color: #19232F;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+}
+
+.browse .list_item .list_text{
+    font-size: 12px;
+    margin-top: 16px;
+    color: #898F97;
+}
+
+.browse .active_list .list_icon{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(180deg, rgba(145, 190, 228, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #19232F;
+}
+
+
+.browse .active_list .list_text{
+    color: white !important;
+}
+
+/* Podcast List */
+
+.browse .podcast_list{
+    margin-right: 32px;
+}
+
+.browse .podcast_list h2{
+    font-size: 16px;
+    color: #898F97;
+    font-weight: 500;
+}
+
+.browse .podcast_list .podcast_item{
+    position: relative;
+    padding: 29px 32px;
+    margin-top: 20px;
+    background: red;
+    border-radius: 24px 24px 0px 24px;
+}
+
+.browse .podcast_list .item_1{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(90deg, rgba(9, 18, 28, 0.8) 10.94%, rgba(9, 18, 28, 0) 100%), url('../../assets/img/podcast_bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.browse .podcast_list .item_2{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(90deg, rgba(9, 18, 28, 0.8) 10.94%, rgba(9, 18, 28, 0) 100%), url('../../assets/img/podcast_bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.browse .podcast_list .podcast_item .podcast_title{
+    margin-bottom: 19px;
+    font-size: 24px;
+}
+
+
+.browse .podcast_list .podcast_item .podcast_date{
+    font-size: 13px;
+}
+
+
+.browse .podcast_list .podcast_item .podcast_author{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.browse .podcast_list .podcast_item .podcast_author .author_name{
+    margin-left: 8px;
+}
+
+.browse .podcast_list .podcast_item .podcast_author img{
+    width: 16px;
+    height: 16px;
+}
+
+.browse .podcast_list .podcast_item .play_btn{
+    background: transparent !important;
+    border: 0;
+    position: absolute;
+    right: -29px;
+    bottom: -32px;
+}
