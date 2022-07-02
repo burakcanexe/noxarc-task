@@ -15,6 +15,7 @@ function Browse() {
     const [value, setValue] = useState('Tincidunt ')
 
     const token = useSelector(state => state.user.token)
+    const items = useSelector(state => state.search.items)
     const navigate = useNavigate()
     const dispatch = useDispatch()
 

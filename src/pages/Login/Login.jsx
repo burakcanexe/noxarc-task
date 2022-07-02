@@ -4,19 +4,18 @@ import { GoKey } from 'react-icons/go'
 import './login.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../redux/userSlice'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
 
-    const [formData,setFormData]=useState({
-        email:'',
-        password:''
+    const [formData, setFormData] = useState({
+        email: '',
+        password: ''
     })
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const token = useSelector(state=>state.user.token)
-    
+    const token = useSelector(state => state.user.token)
 
     const submitHandler = async (e) => {
         e.preventDefault()
@@ -26,13 +25,8 @@ function Login() {
     // useEffect(()=>{
     //     if (token) {
     //         navigate('/browse')
-    //     }else{
-    //         console.log('/');
     //     }
-
     // },[dispatch,token,navigate])
-
-
 
     return (
         <div className='login'>
@@ -64,11 +58,11 @@ function Login() {
                 <form onSubmit={submitHandler}>
                     <div className="form_group">
                         <AiOutlineMail className='input_icon' />
-                        <input type="email" name="email" placeholder='E-mail adress' onChange={(e)=>setFormData(prev=>({...prev, email:e.target.value}))}/>
+                        <input type="email" name="email" placeholder='E-mail adress' onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))} />
                     </div>
                     <div className="form_group">
                         <GoKey className='input_icon' />
-                        <input type="password" name="password" placeholder='Password' onChange={(e)=>setFormData(prev=>({...prev, password:e.target.value}))}/>
+                        <input type="password" name="password" placeholder='Password' onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))} />
                     </div>
                     <button type='submit'>Login</button>
                 </form>
