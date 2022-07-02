@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Browse Screen
 ![Browse Screen](https://i.hizliresim.com/3bumntu.png)
 
-### Login Screen
+### Podcast Screen
 ![Podcast Screen](https://i.hizliresim.com/rt5a38o.png)
 
 ## Available Scripts
